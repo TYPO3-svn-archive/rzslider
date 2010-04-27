@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+  	<type>database</type>
+		<description>Language labels for extension 'rzslider' forms</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+		  <label index="rzslider.pi_flexform.sheet_general">General</label>
+		  <label index="rzslider.pi_flexform.sheet_options">Options</label>
+		  <label index="rzslider.pi_flexform.ce">Content Elements</label>
+		  <label index="rzslider.pi_flexform.headlines">Overwrite tab headlines</label>
+		  <label index="rzslider.pi_flexform.onlytabheadlines">Show headlines only in tab navigation</label>
+		  <label index="rzslider.pi_flexform.position">Position (0 = random)</label>
+		  <label index="rzslider.pi_flexform.autoslide">Autoslide (0 = false, 1 = true)</label>
+		  <label index="rzslider.pi_flexform.autoslideinterval">Autoslide interval (ms)</label>
+		  <label index="rzslider.pi_flexform.autoslidestopwhenclicked">Autoslide stop when clicked</label>
+		  <label index="rzslider.pi_flexform.dynamictabs">Tab Menue</label>
+      <label index="rzslider.pi_flexform.dynamictabsposition">Tab position</label>
+      <label index="rzslider.pi_flexform.dynamictabsposition_top">top</label>
+      <label index="rzslider.pi_flexform.dynamictabsposition_bottom">bottom</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign">Tab align</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign_center">center</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign_left">left</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign_right">right</label>
+		  <label index="rzslider.pi_flexform.dynamicarrows">Arrows</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction">Easing for the slides</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_1">easeInOutExpo</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_2">easeOutBounce</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_3">easeOutCirc</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_4">easeOutSine</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_5">easeOutBack</label>	
+      <label index="rzslider.pi_flexform.slideEaseFunction_6">easeOutElastic</label>	
+      <label index="rzslider.pi_flexform.slideEaseFunction_7">easeOutQuint</label>
+      <label index="rzslider.pi_flexform.slideeaseduration">Slide ease duration (ms)</label>	
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction">Easing for the auto height</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_1">easeInOutExpo</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_2">easeOutBounce</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_3">easeOutCirc</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_4">easeOutSine</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_5">easeOutBack</label>	
+      <label index="rzslider.pi_flexform.autoHeightEaseFunction_6">easeOutElastic</label>	
+      <label index="rzslider.pi_flexform.autoHeightEaseFunction_7">easeOutQuint</label>
+      <label index="rzslider.pi_flexform.autoheighteaseduration">Auto height ease duration (ms)</label>	
+      <label index="rzslider.pi_flexform.autoheight">Auto height</label>      	      	  
+		</languageKey>                                                      
+		<languageKey index="de" type="array">
+		  <label index="rzslider.pi_flexform.sheet_general">Allgemein</label>
+		  <label index="rzslider.pi_flexform.sheet_options">Optionen</label>
+      <label index="rzslider.pi_flexform.ce">Inhaltselemente</label>
+      <label index="rzslider.pi_flexform.headlines">Tab Überschriften überschreiben</label> 
+      <label index="rzslider.pi_flexform.onlytabheadlines">Überschriften nur in Tab Navigation anzeigen</label>
+		  <label index="rzslider.pi_flexform.position">Position (0 = zufällig)</label>
+		  <label index="rzslider.pi_flexform.autoslide">Autoslide</label>
+		  <label index="rzslider.pi_flexform.autoslidestopwhenclicked">Autoslide hört bei Click auf</label>
+		  <label index="rzslider.pi_flexform.autoslideinterval">Autoslide Intervall (ms)</label>
+		  <label index="rzslider.pi_flexform.dynamictabs">Tab Navigation</label>
+		  <label index="rzslider.pi_flexform.dynamictabsposition">Tab Position</label>
+      <label index="rzslider.pi_flexform.dynamictabsposition_top">oben</label>
+      <label index="rzslider.pi_flexform.dynamictabsposition_bottom">unten</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign">Tab Ausrichtung</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign_center">mittig</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign_left">links</label>
+      <label index="rzslider.pi_flexform.dynamictabsalign_right">rechts</label>
+		  <label index="rzslider.pi_flexform.dynamicarrows">Pfeil Navigation</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction">Easing für die Slides</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_1">easeInOutExpo</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_2">easeOutBounce</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_3">easeOutCirc</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_4">easeOutSine</label>
+		  <label index="rzslider.pi_flexform.slideEaseFunction_5">easeOutBack</label>		
+      <label index="rzslider.pi_flexform.slideEaseFunction_6">easeOutElastic</label>	
+      <label index="rzslider.pi_flexform.slideEaseFunction_7">easeOutQuint</label>
+      <label index="rzslider.pi_flexform.slideeaseduration">Slide Ease Dauer (ms)</label> 
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction">Easing für die Auto-Höhe</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_1">easeInOutExpo</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_2">easeOutBounce</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_3">easeOutCirc</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_4">easeOutSine</label>
+		  <label index="rzslider.pi_flexform.autoHeightEaseFunction_5">easeOutBack</label>	
+      <label index="rzslider.pi_flexform.autoHeightEaseFunction_6">easeOutElastic</label>	
+      <label index="rzslider.pi_flexform.autoHeightEaseFunction_7">easeOutQuint</label>
+      <label index="rzslider.pi_flexform.autoheighteaseduration">Auto-Höhe Ease Dauer (ms)</label>	
+      <label index="rzslider.pi_flexform.autoheight">Auto-Höhe</label>	            		  
+		</languageKey>  
+	</data>
+</T3locallang>  
+

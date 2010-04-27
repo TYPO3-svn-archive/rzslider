@@ -8,10 +8,12 @@
 		<languageKey index="default" type="array">
 			<label index="pi1_title">jQuery Coda-Slider</label>
 			<label index="pi1_plus_wiz_description">Inserts a jQuery Coda-Slider</label>
+			<label index="pi1_add">Add new content element</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="pi1_title">jQuery Coda-Slider</label>
 			<label index="pi1_plus_wiz_description">Fügt einen jQuery Coda-Slider hinzu</label>
+			<label index="pi1_add">Neues Content Element hinzufügen</label>
 		</languageKey>
 	</data>
 </T3locallang>

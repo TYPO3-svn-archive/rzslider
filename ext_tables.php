@@ -21,4 +21,8 @@ t3lib_extMgm::addPiFlexFormValue($_EXTKEY.'_pi1','FILE:EXT:'.$_EXTKEY.'/ff_data_
 if (TYPO3_MODE == 'BE') {
 	$TBE_MODULES_EXT['xMOD_db_new_content_el']['addElClasses']['tx_rzslider_pi1_wizicon'] = t3lib_extMgm::extPath($_EXTKEY).'pi1/class.tx_rzslider_pi1_wizicon.php';
 }
+
+// Include the dbrelation userfunc for the flexform
+include_once(t3lib_extMgm::extPath($_EXTKEY).'lib/class.tx_rzslider_dbrelation.php'); 
+
 ?>

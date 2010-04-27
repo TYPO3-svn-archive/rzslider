@@ -1,0 +1,2 @@
+# cat=basic; type=string; label=Storage Folder ID: Define were the content elements should be saved, if empty the current page were the plugin is inserted will be used.
+storage_folder = 

@@ -76,6 +76,68 @@ class tx_rzslider_pi1 extends tslib_pibase {
     $autoHeightEaseDuration = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'autoheighteaseduration', 'options');    
     $ce_explode = explode(",",$ce); 
     
+    // TypoScript
+    if(!empty($conf['autoSlide']) && $conf['autoSlide'] == '1') {
+      $autoslide = '1';
+    }
+    else if(!empty($conf['autoSlide']) && $conf['autoSlide'] == '0') {
+      $autoslide = '0';  
+    }
+    
+    if(!empty($conf['autoSlideInterval']) && is_numeric($conf['autoSlideInterval'])) {
+      $autoSlideInterval = $conf['autoSlideInterval'];
+    }
+    
+    if(!empty($conf['autoSlideStopWhenClicked']) && $conf['autoSlideStopWhenClicked'] == '1') {
+      $autoSlideStopWhenClicked = '1';
+    }
+    else if(!empty($conf['autoSlideStopWhenClicked']) && $conf['autoSlideStopWhenClicked'] == '0') {
+      $autoSlideStopWhenClicked = '0';  
+    }
+    
+    if(!empty($conf['position']) && is_numeric($conf['position'])) {
+      $position = $conf['position'];
+    }
+    
+    if(!empty($conf['dynamicTabs']) && $conf['dynamicTabs'] == '1') {
+      $dynamictabs = '1';
+    }
+    else if(!empty($conf['dynamicTabs']) && $conf['dynamicTabs'] == '0') {
+      $dynamictabs = '0';  
+    }
+    
+    if(!empty($conf['dynamicTabsPosition']) && $conf['dynamicTabsPosition'] == 'top') {
+      $dynamicTabsPosition = 'top';
+    }
+    else if(!empty($conf['dynamicTabsPosition']) && $conf['dynamicTabsPosition'] == 'bottom') {
+      $dynamicTabsPosition = 'bottom';
+    }
+    
+    if(!empty($conf['dynamicTabsAlign']) && $conf['dynamicTabsAlign'] == 'center') {
+      $dynamicTabsAlign = 'center';
+    }
+    else if(!empty($conf['dynamicTabsAlign']) && $conf['dynamicTabsAlign'] == 'left') {
+      $dynamicTabsAlign = 'left';
+    }    
+    else if(!empty($conf['dynamicTabsAlign']) && $conf['dynamicTabsAlign'] == 'right') {
+      $dynamicTabsAlign = 'right';
+    }    
+    
+    if(!empty($conf['dynamicArrows']) && $conf['dynamicArrows'] == '1') {
+      $dynamicarrows = '1';  
+    }        
+    else if(!empty($conf['dynamicArrows']) && $conf['dynamicArrows'] == '0') {
+      $dynamicarrows = '0'; 
+    }
+    
+    if(!empty($conf['autoHeight']) && $conf['autoHeight'] == '1') {
+      $autoheight = '1';  
+    }        
+    else if(!empty($conf['autoHeight']) && $conf['autoHeight'] == '0') {
+      $autoheight = '0'; 
+    }    
+    
+    // Set some JS options
     if($dynamictabs != '0') {
       $tabs = 'dynamicTabsPosition: "'.$dynamicTabsPosition.'",
         dynamicTabsAlign: "'.$dynamicTabsAlign.'",

@@ -59,6 +59,7 @@ class tx_rzslider_pi1 extends tslib_pibase {
 		// Read Flexform	
     $this->pi_initPIflexForm();
     $ce = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'ce', 'sDEF');
+    $ce = substr($ce,0,-1);
     $headlines = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'headlines', 'sDEF');
     $onlytabheadlines = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'onlytabheadlines', 'sDEF');
     $position = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'position', 'options');

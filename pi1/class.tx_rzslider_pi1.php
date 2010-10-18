@@ -75,7 +75,7 @@ class tx_rzslider_pi1 extends tslib_pibase {
     $autoheight = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'autoheight', 'options');
     $autoHeightEaseFunction = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'autoheighteasefunction', 'options');
     $autoHeightEaseDuration = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'autoheighteaseduration', 'options');    
-    $ce_explode = explode(",",$ce); 
+    $ce_explode = explode(",",$ce);    
     
     // TypoScript
     if(!empty($conf['autoSlide']) && $conf['autoSlide'] == '1') {
@@ -176,6 +176,9 @@ class tx_rzslider_pi1 extends tslib_pibase {
       $autoheight_js = 'autoHeightEaseFunction: "'.$autoHeightEaseFunction.'",
         autoHeightEaseDuration: '.$autoHeightEaseDuration.', ';
     }
+    else {
+      $autoheight_js = 'autoHeight: 0,';
+    }    
     
     // CE ID
     $ce_id = $this->cObj->data['uid'];
@@ -197,8 +200,8 @@ class tx_rzslider_pi1 extends tslib_pibase {
     // Add JS
     $GLOBALS['TSFE']->additionalHeaderData[$this->prefixId] .= '
       <script type="text/javascript"> 
-  		$().ready(function() {
-  			$(\'#coda-slider-'.$ce_id.'\').codaSlider({
+  		jQuery().ready(function() {
+  			jQuery(\'#coda-slider-'.$ce_id.'\').codaSlider({
   			  crossLinking: false,
           firstPanelToLoad: '.$position.',
           autoSlide: '.$autoslide.',
@@ -232,7 +235,7 @@ class tx_rzslider_pi1 extends tslib_pibase {
     foreach($ce_explode as $c) {
       // Output the CE's    
       $ce_conf = array('tables' => 'tt_content','source' => $c,'dontCheckPid' => 1);
-      $row = $this->pi_getRecord('tt_content', $c, 0);      
+      $row = $this->pi_getRecord('tt_content', str_replace("tt_content_","",$c), 0);      
       // Get the Flexform headlines
       $headline = $headlines_explode[$i];
       if(empty($headline)) {
@@ -250,7 +253,7 @@ class tx_rzslider_pi1 extends tslib_pibase {
         </div>
       ';
       
-      $i++;
+      $i++;  
     }
     	
 		$content .= '

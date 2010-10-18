@@ -39,7 +39,7 @@
 /* Don't change anything below here unless you know what you're doing */
 
 	/* Tabbed nav */
-	.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden }
+	.coda-nav ul { clear: both; display: block; margin: auto; overflow: hidden; }
 	.coda-nav ul li { display: inline }
 	.coda-nav ul li a { background: #000; color: #fff; display: block; float: left; margin-right: 1px; padding: 3px 6px; text-decoration: none }
 	
